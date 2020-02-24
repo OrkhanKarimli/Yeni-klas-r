@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+body,html,ul,header{
+padding: 0;
+list-style-type: none;
+
+}
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif ;
+}
+.main-left{
+   background-color: #041230;
+    width: 0;
+    height: 100vh;
+    left: 0;
+    bottom: 0;
+    right: 0;
+display: inline-block;
+  position: fixed;
+  
+}
+.main-left.show{
+    width: 250px;
+    
+
+}
+.logo{
+  border-bottom: 1px solid #ffffff1a;
+  position: relative;
+  height: 196px;
+}
+.logo > img{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  
+}
+.nav ul>li>a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color:white;
+  display: inline-block;
+  padding: 20px 10px 15px 30px;
+  position: relative;
+}
+.nav ul>li>a:hover{
+  width: 100%;
+
+  color:orange;
+}
+.nav ul>li>a::after{
+  content: "";
+display: inline-block;
+background-color: orange;
+width: 0px;
+height: 2px;
+
+top: 50%;
+transform: translateY(-50%);
+transition: all .2s;
+margin-left: 10px;
+}
+.nav ul>li>a:hover::after{
+  position: absolute;
+width: 50px;
+
+}
+
+.social {
+ display: flex;
+ justify-content: center;
+ width: 100%;
+position: absolute;
+bottom: 50px;
+
+
+}
+.social li{
+  margin-right: 10px;
+}
+.social li:last-child{
+  margin-right: 0 ;
+}
+.social li> a{
+  color: white;
+}
+.social li> a:hover{
+  color: orange;
+  transition: 0.3s;
+}
+.main-left.show .buton{
+width: 30px;
+height: 30px;
+display: inline-block;
+background-color: orange;
+position: absolute;
+right: 0;
+bottom: 30%;
+
+}
+.main-left.show .buton::before{
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-left: white 1px solid;
+  border-bottom: white 1px solid;
+  display: inline-block;
+  transform: rotate(45deg) translate(82%,-18%);
+  
+}
+/* .profil{
+display: inline-block;
+position: absolute;
+left: 50%;
+top: 50%;
+width: 300px;
+height: 300px;
+} */
+.profil{
+  margin-left: 300px;
+  
+}
+
+
+
+header{
+  height: 100vh;
+ margin: -8px;
+  background-color: teal;
+  
+  
+}
+.profil>img{
+  border-radius: 100%;
+    width: 250px;
+    
+    height: auto;
+     border: 10px solid gray;
+     position: absolute;
+  left: 60%;
+  top: 39%;
+  transform: translateX(-50%);
+}
